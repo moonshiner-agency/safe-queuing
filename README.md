@@ -1,8 +1,6 @@
 # Laravel Safe Queuing | manage timeslots and limit reservations
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/moonshiner/safe-queuing.svg?style=flat-square)](https://packagist.org/packages/moonshiner/safe-queuing)
-[![Build Status](https://img.shields.io/travis/moonshiner/safe-queuing/master.svg?style=flat-square)](https://travis-ci.org/moonshiner/safe-queuing)
-[![Quality Score](https://img.shields.io/scrutinizer/g/moonshiner/safe-queuing.svg?style=flat-square)](https://scrutinizer-ci.com/g/moonshiner/safe-queuing)
 [![Total Downloads](https://img.shields.io/packagist/dt/moonshiner/safe-queuing.svg?style=flat-square)](https://packagist.org/packages/moonshiner/safe-queuing)
 
 This package helps you to attach timeslot and reservation capabilities to your existing Eloquent Models in Laravel.
