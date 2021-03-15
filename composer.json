@@ -1,0 +1,53 @@
+{
+    "name": "moonshiner/safe-queuing",
+    "description": "Package to manage bookings and reservations for timeslots",
+    "keywords": [
+        "moonshiner",
+        "safe-queuing"
+    ],
+    "homepage": "https://github.com/moonshiner/safe-queuing",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Moonshiner GmbH",
+            "email": "office@moonshiner.at",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Moonshiner\\SafeQueuing\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Moonshiner\\SafeQueuing\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Moonshiner\\SafeQueuing\\SafeQueuingServiceProvider"
+            ],
+            "aliases": {
+                "SafeQueuing": "Moonshiner\\SafeQueuing\\SafeQueuingFacade"
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateReservationsTable extends Migration
+{
+    public function up()
+    {
+        Schema::create(config('safe-queuing.table', 'reservations'), function (Blueprint $table) {
+            $table->uuid('id')->primary();
+            $table->text('details'); // json, can be filled with anything (Customer Data if you wish so)
+            $table->string('timeslot'); // full Timeslot, because the timeslot can change but not the reservation
+            $table->integer('reservable_id')->unsigned();
+            $table->string('reservable_type');
+            $table->timestamp('reservation_start');
+            $table->timestamps();
+
+            $table->index('timeslot');
+            $table->index('reservation_start');
+            $table->index(['reservable_id', 'reservable_type']);
+        });
+    }
+
+    public function down()
+    {
+        Schema::drop(config('safe-queuing.table', 'reservations'));
+    }
+}
