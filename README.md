@@ -135,12 +135,12 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ### Security
 
-If you discover any security related issues, please email florian.bauer@moonshiner.at instead of using the issue tracker.
+If you discover any security related issues, please email office@moonshiner.at instead of using the issue tracker.
 
 ## Credits
 
--   [Florian Bauer](https://github.com/moonshiner)
--   [Raphael Fleischmann](https://github.com/moonshiner)
+-   [Florian Bauer](https://github.com/flobauer)
+-   [Raphael Fleischmann](https://github.com/raphaelflash)
 -   [All Contributors](../../contributors)
 
 ## License
